@@ -10,6 +10,7 @@ resultPage score =
     div [ class "score" ]
         [ h1 [] [ text ("Your score: " ++ String.fromInt score ++ " / 5") ]
         , a [ class "btn btn-primary", href "#" ] [ text "Replay" ]
+        , p [] [ text (if score >=0 && score <= 3 then "Keep going, I'm sure you can do better!" else "Congrats, this is really good!") ]
         ]
 
 
